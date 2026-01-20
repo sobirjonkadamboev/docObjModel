@@ -1,7 +1,7 @@
 const blockAd = document.querySelectorAll('.promo__adv img'),
 	genreChange = document.querySelector('.promo__genre'),
 	background = document.querySelector('.promo__bg'),
-	seris = document.querySelectorAll('promo__interactive-list')
+	seriesList = document.querySelector('.promo__interactive-list')
 
 const seriesDB = {
 	series: [
@@ -20,3 +20,10 @@ blockAd.forEach(item => {
 genreChange.textContent = 'Comedy'
 
 background.style.backgroundImage = 'url(./img/1.jpg)' //move from index.html not this .js
+
+seriesList.innerHTML = ''
+
+seriesDB.series.forEach((item, index) => {
+	seriesList.innerHTML += `<li class="promo__interactive-item"> ${index + 1} ${item}
+	<div class="delete"></div></li>`
+})
