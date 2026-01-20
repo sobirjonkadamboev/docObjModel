@@ -5,4 +5,4 @@ blockAd.forEach(item => {
 	item.remove()
 })
 
-genreChange.inn
+genreChange.textContent = 'Comedy'
