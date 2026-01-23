@@ -6,8 +6,14 @@ btn.addEventListener('click', event => {
 	event.target.textContent = 'Button'
 })
 
+let counter = 0
+
 const deleteElement = event => {
-	event.target.remove()
+	counter++
+	console.log(counter)
+	if (counter == 4) {
+		btn.removeEventListener('click', deleteElement)
+	}
 }
 
 btn.addEventListener('click', deleteElement)
