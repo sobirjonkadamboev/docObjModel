@@ -1,4 +1,6 @@
 const data = document.querySelector('[data-item="4"]')
+const body = document.body.childNodes
+
 console.log(data.nextSibling)
 
 /* 
