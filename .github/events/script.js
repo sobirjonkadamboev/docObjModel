@@ -1,3 +1,17 @@
+const buttons = document.querySelectorAll('button')
+
+buttons.forEach((item, idx) => {
+	item.addEventListener(
+		'click',
+		() => {
+			console.log(idx + 1)
+		},
+		{ once: true }, //works only one time
+	)
+})
+
+/* 
+
 const link = document.querySelector('.a_link')
 
 link.addEventListener('click', event => {
@@ -5,7 +19,7 @@ link.addEventListener('click', event => {
 	console.log('click')
 })
 
-/* const btn = document.querySelector('button'),
+const btn = document.querySelector('button'),
 	overlay = document.querySelector('.overlay')
 
  const callback = event => {
