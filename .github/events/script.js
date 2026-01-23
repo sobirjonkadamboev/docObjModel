@@ -6,6 +6,14 @@ btn.addEventListener('click', event => {
 	event.target.textContent = 'Button'
 })
 
+let counter = 0
+const calculateElement = event => {
+	counter++
+	console.log(counter)
+}
+calculateElement()
+
+//event.target.remove() - for removing events going on variables
 /* btn.onclick = function () {
 	console.log(1)
 }
