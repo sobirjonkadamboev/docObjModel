@@ -1,3 +1,7 @@
+const data = document.querySelector('[data-item="4"]')
+console.log(data.nextSibling)
+
+/* 
 const buttons = document.querySelectorAll('button')
 
 buttons.forEach((item, idx) => {
@@ -10,7 +14,6 @@ buttons.forEach((item, idx) => {
 	)
 })
 
-/* 
 
 const link = document.querySelector('.a_link')
 
