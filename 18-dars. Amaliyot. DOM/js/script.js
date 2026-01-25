@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		genreChange = document.querySelector('.promo__genre'),
 		background = document.querySelector('.promo__bg'),
 		seriesList = document.querySelector('.promo__interactive-list'),
-		formBN = document.querySelector('form'),
-		submitBTN = document.querySelector('button'),
-		inputB = document.querySelector('adding__input')
+		addForm = document.querySelector('form.add'),
+		inputB = addForm.querySelector('.adding__input'),
+		checkbox = addForm.querySelector([(type = 'checkbox')])
 
 	const seriesDB = {
 		series: [
@@ -17,15 +17,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		],
 	}
 
+	addForm.addEventListener('submit', event => {
+		event.preventDefault()
+		let newValue = input.value
+		const favorite = checkbox.checked
+
+		if (newValue) {
+			if (newValue.length > 18) {
+				newValue = `${newValue.slice(0, 18)}...`
+			}
+			if (favorite) {
+				console.log('Your favorite one loaded')
+			}
+			seriesDB.series.push(newValue)
+		}
+	})
+
 	blockAd.forEach(item => {
 		item.remove()
 	})
-
-	function submitB() {
-		formBN.value = inputB.value
-	}
-
-	submitB()
 
 	genreChange.textContent = 'Comedy'
 
