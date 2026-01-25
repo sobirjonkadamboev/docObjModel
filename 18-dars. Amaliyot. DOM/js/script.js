@@ -1,10 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 	const blockAd = document.querySelectorAll('.promo__adv img'),
 		genreChange = document.querySelector('.promo__genre'),
 		background = document.querySelector('.promo__bg'),
 		seriesList = document.querySelector('.promo__interactive-list'),
 		formBN = document.querySelector('form'),
-		submitBTN = document.querySelector('button')
+		submitBTN = document.querySelector('button'),
+		inputB = document.querySelector('adding__input')
 
 	const seriesDB = {
 		series: [
@@ -19,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	blockAd.forEach(item => {
 		item.remove()
 	})
+
+	function submitB() {
+		formBN.value = inputB.value
+	}
+
+	submitB()
 
 	genreChange.textContent = 'Comedy'
 
