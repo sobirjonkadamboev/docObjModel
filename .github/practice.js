@@ -12,3 +12,15 @@ z = 18
 
 let _lastName = 'Sobirjon'
 console.log(_lastName)
+
+let text1 = 'Text'
+let text2 = '2'
+console.log(text1 + '' + text2)
+
+let num = 3
+num += 8
+console.log(num)
+
+let j = 5
+let l = Math.pow(j, 2)
+console.log(l)
