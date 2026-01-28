@@ -24,3 +24,5 @@ console.log(num)
 let j = 5
 let l = Math.pow(j, 2)
 console.log(l)
+
+console.log('action')
