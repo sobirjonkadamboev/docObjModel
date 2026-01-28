@@ -25,4 +25,8 @@ let j = 5
 let l = Math.pow(j, 2)
 console.log(l)
 
-console.log('action')
+let cars = ['BMW', 'Lamborghini', 'Audi', 'Damas']
+
+for (let i = 0; i < cars.length; i++) {
+	console.log(cars[i])
+}
