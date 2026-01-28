@@ -30,3 +30,7 @@ let cars = ['BMW', 'Lamborghini', 'Audi', 'Damas']
 for (let i = 0; i < cars.length; i++) {
 	console.log(cars[i])
 }
+
+for (let i = 0; i < 10; i++) {
+	console.log(i)
+}
