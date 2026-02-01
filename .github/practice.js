@@ -34,3 +34,10 @@ for (let i = 0; i < cars.length; i++) {
 for (let i = 0; i < 10; i++) {
 	console.log(i)
 } //for loop that executes numbers from 0 to 9
+
+let k = 0
+let text = ''
+while (k < 13) {
+	text += 'The number is ' + k + '<nr></nr>'
+	k++
+}
