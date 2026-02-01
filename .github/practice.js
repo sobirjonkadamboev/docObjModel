@@ -42,3 +42,13 @@ while (k < 13) {
 	k++
 }
 console.log(text)
+
+let number = +prompt('Enter the number: ', '')
+function oddNumber() {
+	if (number % 2 === 0) {
+		console.log(`${number} is even number`)
+	} else {
+		console.log(`${number} is odd number`)
+	}
+}
+oddNumber()
