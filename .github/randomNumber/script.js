@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		const min = Number(minNum.value)
 		const max = Number(maxNum.value)
 		const warning = document.getElementById('warning')
+		const result = randomNum(min, max)
+		pastNumbers.unshift(result)
+		console.log(pastNumbers)
 
 		warning.textContent = ''
 
@@ -27,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 
 	const history = document.getElementById('history')
+	history.innerHTML = ''
+	pastNumbers.forEach((number) => {
+		document.createElement = '<li></li>'
+	})
 
 	const btnElement = document.getElementById('generate')
 	btnElement.addEventListener('click', generate)
