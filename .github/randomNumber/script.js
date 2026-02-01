@@ -31,8 +31,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 	const history = document.getElementById('history')
 	history.innerHTML = ''
-	pastNumbers.forEach((number) => {
-		document.createElement = '<li></li>'
+	pastNumbers.forEach(number => {
+		document.createElement = 'li'
+		newItem.textContent = number
+		mainList.appendChild('newItem')
+		const mainList = document.getElementById('history')
+		mainList.innerHTML = ''
 	})
 
 	const btnElement = document.getElementById('generate')
