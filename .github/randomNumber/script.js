@@ -1,3 +1,4 @@
+let pastNumbers = []
 document.addEventListener('DOMContentLoaded', function (event) {
 	const randomNum = (min, max) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min
@@ -24,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		const placeholder = document.querySelector('#placeholder')
 		placeholder.textContent = randomNum(min, max)
 	}
+
+	const history = document.getElementById('history')
 
 	const btnElement = document.getElementById('generate')
 	btnElement.addEventListener('click', generate)
