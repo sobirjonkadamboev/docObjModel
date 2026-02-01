@@ -43,12 +43,19 @@ while (k < 13) {
 }
 console.log(text)
 
-let number = +prompt('Enter the number: ', '')
-function oddNumber() {
+function oddNumber(number) {
 	if (number % 2 === 0) {
 		console.log(`${number} is even number`)
 	} else {
 		console.log(`${number} is odd number`)
 	}
 }
-oddNumber()
+oddNumber(3)
+
+const mostBig = function (number1, number2) {
+	if (number1 >= number2) {
+		return number1
+	}
+	return number2
+}
+console.log(mostBig(4, 3))
