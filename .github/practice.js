@@ -38,6 +38,7 @@ for (let i = 0; i < 10; i++) {
 let text = ''
 let k = 0
 while (k < 13) {
-	text += 'The number is ' + k + '<br>'
+	text += 'The number is ' + k
 	k++
 }
+console.log(text)
