@@ -4,8 +4,22 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 
 	const generate = () => {
+		const minNum = document.getElementById('min')
+		const maxNum = document.getElementById('max')
+		const min = Number(minNum.value)
+		const max = Number(maxNum.value)
+
+		if (minNum.value === '' || maxNum.value === '') {
+			alert('Please, enter values to min and max')
+			return
+		}
+
+		if (min > max) {
+			alert('Min should be low than max')
+			return
+		}
 		const placeholder = document.querySelector('#placeholder')
-		placeholder.textContent = 9
+		placeholder.textContent = randomNum(min, max)
 	}
 
 	const btnElement = document.getElementById('generate')
