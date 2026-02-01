@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		const maxNum = document.getElementById('max')
 		const min = Number(minNum.value)
 		const max = Number(maxNum.value)
+		const warning = document.getElementById('warning')
+
+		warning.textContent = ''
 
 		if (minNum.value === '' || maxNum.value === '') {
 			alert('Please, enter values to min and max')
@@ -15,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		}
 
 		if (min > max) {
-			alert('Min should be low than max')
+			warning.textContent = 'Min should be lower than max'
 			return
 		}
 		const placeholder = document.querySelector('#placeholder')
