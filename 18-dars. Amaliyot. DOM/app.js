@@ -10,7 +10,6 @@ console.log(typeof newVariable)
  */
 
 //mini project by codecademy
-//forecast today is 293 kelvin
 
 //forecast today is 293 kelvin
 const kelvin = 293
