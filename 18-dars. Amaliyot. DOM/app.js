@@ -21,3 +21,14 @@ let fahrenheit = Math.floor(celsius * (9 / 5) + 32)
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`)
 
 //second project by codecademy
+//created a variable with my age
+let myAge = 19
+//another variable
+let earlyYears = 2
+earlyYears *= 10.5
+//next variable
+let laterYears = myAge - 2
+//number of dog years by later years
+laterYears *= 4
+console.log(earlyYears)
+console.log(laterYears)
