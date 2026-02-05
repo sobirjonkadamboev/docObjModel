@@ -21,6 +21,7 @@ let fahrenheit = Math.floor(celsius * (9 / 5) + 32)
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`)
 
 //second project by codecademy
+
 //created a variable with my age
 let myAge = 19
 //another variable
@@ -32,3 +33,11 @@ let laterYears = myAge - 2
 laterYears *= 4
 console.log(earlyYears)
 console.log(laterYears)
+//added two variables together
+myAgeInDogYears = earlyYears + laterYears
+//created a variable with my name
+let myName = 'sobirjon'.toLowerCase()
+//printed the result here
+console.log(
+	`My name is ${myName}. I am ${myAge} years old in human years, which is ${myAgeInDogYears} years old in dog years.`,
+)
